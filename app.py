@@ -13,8 +13,8 @@ import streamlit_authenticator as stauth  # pip install streamlit-authenticator
 
 import database as db
 
-placeholder = st.empty()
-placeholder.info("CREDENTIALS | username:pparker ; password:abc123")
+# placeholder = st.empty()
+# placeholder.info("CREDENTIALS | username:pparker ; password:abc123")
 
 usernames = ["pparker", "rmiller"]
 names = ["Peter Parker", "Rebecca Miller"]
@@ -55,7 +55,7 @@ if authentication_status == None:
     st.warning("Please enter your username and password")
 
 if authentication_status:
-    placeholder.empty()
+#     placeholder.empty()
     st.title("SmartFit")
 
     st.subheader("Exercise Plan: \n * Squats \n * Curl")
