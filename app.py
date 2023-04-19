@@ -287,6 +287,7 @@ if authentication_status:
             async_processing=True,
             rtc_configuration={  # Add this config
                 "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+            }
         )
 
 
