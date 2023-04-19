@@ -9,5 +9,5 @@ mediapipe==0.8.11
 numpy==1.22.3
 # threadpoolctl==3.1.0
 pybase64==1.2.3
-openpyxl-3.1.2
+# openpyxl-3.1.2
 # async-timeout==4.0.2
