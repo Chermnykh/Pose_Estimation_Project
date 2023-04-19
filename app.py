@@ -13,8 +13,6 @@ import streamlit_authenticator as stauth  # pip install streamlit-authenticator
 import database as db
 
 
-db = deta.Base("users")
-
 usernames = ["pparker", "rmiller"]
 names = ["Peter Parker", "Rebecca Miller"]
 passwords = ["abc123", "def456"]
