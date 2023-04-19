@@ -63,6 +63,16 @@ if authentication_status:
     audio_base64 = base64.b64encode(open("knees.wav", "rb").read()).decode('utf-8')
     audio_tag = f'<audio autoplay="true" src="data:audio/wav;base64,{audio_base64}">'
     st.markdown(audio_tag, unsafe_allow_html=True)
+    
+    # ---- SIDEBAR ----
+    authenticator.logout("Logout", "sidebar")
+    st.sidebar.title(f"Welcome {name}")
+    st.sidebar.header("Please Filter Here:")
+    city = st.sidebar.multiselect(
+        "Select the City:",
+        options=df["City"].unique(),
+        default=df["City"].unique()
+    )
 
 
     # ---- HIDE STREAMLIT STYLE ----
