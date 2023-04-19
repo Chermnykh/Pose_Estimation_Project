@@ -67,12 +67,6 @@ if authentication_status:
     # ---- SIDEBAR ----
     authenticator.logout("Logout", "sidebar")
     st.sidebar.title(f"Welcome {name}")
-    st.sidebar.header("Please Filter Here:")
-    city = st.sidebar.multiselect(
-        "Select the City:",
-        options=df["City"].unique(),
-        default=df["City"].unique()
-    )
 
 
     # ---- HIDE STREAMLIT STYLE ----
