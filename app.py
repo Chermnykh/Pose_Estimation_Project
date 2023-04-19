@@ -188,10 +188,7 @@ if authentication_status:
             key="example",
             video_frame_callback=callback,
             media_stream_constraints={"video": True, "audio": False},
-            async_processing=True,
-            rtc_configuration={  # Add this config
-                "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
-    }
+            async_processing=True
         )
 
     def curl():
@@ -284,10 +281,7 @@ if authentication_status:
             key="example",
             video_frame_callback=callback,
             media_stream_constraints={"video": True, "audio": False},
-            async_processing=True,
-            rtc_configuration={  # Add this config
-                "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
-            }
+            async_processing=True
         )
 
 
