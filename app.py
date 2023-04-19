@@ -13,6 +13,18 @@ import streamlit_authenticator as stauth  # pip install streamlit-authenticator
 import database as db
 
 
+db = deta.Base("users")
+
+usernames = ["pparker", "rmiller"]
+names = ["Peter Parker", "Rebecca Miller"]
+passwords = ["abc123", "def456"]
+hashed_passwords = stauth.Hasher(passwords).generate()
+
+
+for (username, name, hash_password) in zip(usernames, names, hashed_passwords):
+    db.insert_user(username, name, hash_password)
+
+
 # --- USER AUTHENTICATION ---
 users = db.fetch_all_users()
 
