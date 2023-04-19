@@ -12,6 +12,8 @@ import streamlit_authenticator as stauth  # pip install streamlit-authenticator
 
 import database as db
 
+placeholder = st.empty()
+placeholder.info("CREDENTIALS | username:pparker ; password:abc123")
 
 usernames = ["pparker", "rmiller"]
 names = ["Peter Parker", "Rebecca Miller"]
