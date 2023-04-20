@@ -1,9 +1,11 @@
 av==10.0.0
 deta==1.1.0
 mediapipe==0.8.11
-numpy==1.22.3
+# numpy==1.22.3
+numpy==1.21.6
 opencv_contrib_python==4.6.0.66
 opencv_python==4.6.0.66
 streamlit==1.13.0
 streamlit_authenticator==0.2.1
-streamlit_webrtc==0.45.0
+# streamlit_webrtc==0.45.0
+streamlit-webrtc==0.44.7
